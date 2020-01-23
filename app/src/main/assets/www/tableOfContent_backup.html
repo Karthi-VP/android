@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="img-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <!-- Bootstrap CSS -->
+        <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom_style.css">
+        <title>Bhavana Vandana</title>
+    </head>
+    <body>
+        <div class="container-fluid mt-2 mt-md-2 mt-lg-2">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+                    <div class="left_icon text-white list-inline-item">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <img src="img/image1.png" class="logo">
+                    </div>
+                    <div class="app_title list-inline-item align-middle">
+                        <p> Bhavana Vandana </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+                    <div class="menu_list_button">
+                        <a href="index.html">PL</a>
+                        <a class="button_active" href="tableOfContent.html">TOC</a>
+                        <a href="twoPageView.html">2</a>
+                        <a href="singlePageView.html">1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-3 align-self-end">
+                    <div class="input-group custom_search">
+                      <input type="text" class="form-control" placeholder="Click to Search">
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 table_ofContent">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <p class="text-center h4">TABLE OF CONTENTS</p>
+                            <ul class="table_index">
+                                <li><a onclick="focusPoint('page_9')">PREFACE ....... ix</a></li>
+                                <li><a onclick="focusPoint('page_10')">PALI PRONUNCIATION ........X</a></li>
+                                <li><a onclick="focusPoint('intro')">INTRODUCTION ......14</a></li>
+                                <li><a onclick="focusPoint('howToSetUpAShrine')">HOW TO SET UP A SHRINE .......19</a></li>
+                                <li><a onclick="focusPoint('objOfVeneration')">OBJECTS OF VENERATION ON THE ALTAR ........21</a></li>
+                                <li><a onclick="focusPoint('theWayOfSalutation')">THE WAY OF SALUTATION ........24</a></li>
+                                <li><a onclick="focusPoint('formAndInformalVandana')">FORMAL AND INFORMAL VANDANA .........26</a></li>
+                                <li><a onclick="focusPoint('shareOrDedication')">SHARING OR DEDICATION OF MERITS .......32</a></li>
+                                <li><a onclick="focusPoint('forgiveness')">FORGIVENESS AND UPOSATHA .........36-7</a></li>
+                                <li><a onclick="focusPoint('forProtection')">FORU PROTECTIONS .........39</a></li>
+                                
+                                <li class="table_content_group">
+                                    <a onclick="focusPoint('tisaranaSilaYacana')">Tisaraõa and Uposatha Sīla .........42</a>
+                                    <a onclick="focusPoint('reqForTheRefuges')">REQUEST FOR THE REFUGES AND PRECEPTS .........43</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a onclick="focusPoint('pancasila')">Pañcasīla .........44</a>
+                                    <a onclick="focusPoint('theFivePrecepts')">THE FIVE PRECEPTS .........45</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a onclick="focusPoint('atthangasila')">Aññhanga Sīla .........46</a>
+                                    <a>THE EIGHT PRECEPTS .........47</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Buddha Vandanā .........50</a>
+                                    <a>HOMAGE TO THE BUDDHA .........51</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Dhamma Vandanā .........52</a>
+                                    <a>HOMAGE TO THE DHAMMA .........53</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Sangha Vandana .........54</a>
+                                    <a>HOMAGE TO THE SANGHA .........55</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Pūjā .........58</a>
+                                    <a>OFFERING .........59</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Ariya Atthangika Magga .........62</a>
+                                    <a>THE NOBLE EIGHTFOLD PATH .........63</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Paticcasamuppāda .........68</a>
+                                    <a>DEPENDENT ORIGINATION.........69</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Tanhā Janeti imaü Gehaü.........70</a>
+                                    <a>CRAVING IS THE BUILDER OF THIS HOUSE.........71</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Abhinhaü Paccavekkhitabba Dhamma .........72</a>
+                                    <a>DHAMMAS TO BE REFLECTED UPON DAILY.........73</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Dhammaniyāma Sutta .........74</a>
+                                    <a>THE NATURE OF DHAMMA.........75</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Osāna gāthā .........78</a>
+                                    <a>CLOSING RECOLLECTION.........79</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Khama yacana .........78</a>
+                                    <a>ASKING FOR PARDON.........79</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Mangala Sutta .........82</a>
+                                    <a>GREAT DISCOURSE ON GOOD FORTUNE.........83</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Ratana Sutta.........88</a>
+                                    <a>JEWELS DISCOURSE.........89</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Mahājayamangala Gāthā.........96</a>
+                                    <a>THE GREAT VERSES OF JOYOUS VICTORY.........97</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Atīta Paccavekkhanā.........104</a>
+                                    <a>REFELECTION AFTER USING THE REQUISITES.........105</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Atīta Paccavekkhanā.........104</a>
+                                    <a>REFELECTION AFTER USING THE REQUISITES.........105</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Dasadhamma Sutta.........108</a>
+                                    <a>DISCOURSE OF TEN DHAMMAS.........109</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Dasadhamma Sutta.........108</a>
+                                    <a>DISCOURSE OF TEN DHAMMAS.........109</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Anattalakkhaõa Sutta.........114</a>
+                                    <a>THE DISCOURSE ON THE CHARATERISTICS OF SELFLESSNESS.........115</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Ādittapariyāya Sutta.........126</a>
+                                    <a>THE FIRE SERMON.........127</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Ovāda Pātimokkha.........136</a>
+                                    <a>DAILY ADVICE TO MONKS/NUNS.........137</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Buddhajayamangala Gāthā.........138</a>
+                                    <a>VERSES ON THE BUDDHA'S JOYOUS VICTORY.........139</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Bojjhanga Paritta.........142</a>
+                                    <a>PROTECTION BY THE FACTORS OF ENLIGHTENMENT.........143</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Tilakkhanādi Gatha.........146</a>
+                                    <a>VERSES ON THE THREE CHARACTERISTICS.........147</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Dhammasanganīmatika Mātikā Pāñha.........150</a>
+                                    <a>PASSAGES ON THE MATRIX OF THE DHAMMASANGANI.........151</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Catuvīsati Paccaya.........158</a>
+                                    <a>TWENTY-FOUR CONDITIONS.........159</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Attha Mahapurisa Vitakka.........160</a>
+                                    <a>EIGHT GREAT NOBLE THOUGHTS.........161</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Caturārakkha Bhāvanā .........162</a>
+                                    <a>FOUR PROTECTIVE MEDITATIONS.........163</a>
+                                </li>
+                                <li>
+                                    <ul class="sub_ulList">
+                                        <li class="table_content_group">
+                                            <a>Buddhānussati.........162</a>
+                                            <a>RECOLLECTION OF THE BUDDHA.........163</a>
+                                        </li>
+                                        
+                                        <li class="table_content_group">
+                                            <a>Mettā Bhāvanā.........166</a>
+                                            <a>MEDITATION ON LOVING-KINDNESS.........167</a>
+                                        </li>
+                                        
+                                        <li class="table_content_group">
+                                            <a>Karanīyametta Sutta.........170</a>
+                                            <a>MEDITATION ON LOVING-KINDNESS DISCOURSE.........171</a>
+                                        </li>
+                                        
+                                        <li class="table_content_group">
+                                            <a>Khandha Paritta.........176</a>
+                                            <a>DISCOURSE ON THE PROTECTION OF LOVING-KINDNESS.........177</a>
+                                        </li>
+                                        
+                                        <li class="table_content_group">
+                                            <a>Mettanisamsa Sutta.........176</a>
+                                            <a>THE PROFIT OF LOVING-KINDNESS.........177</a>
+                                        </li>
+                                        
+                                        <li class="table_content_group">
+                                            <a>Asubha Bhāvanā.........180</a>
+                                            <a>MEDITATION ON THE UNATTRACTIVENESS OF THE BODY.........181</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Maranasati.........182</a>
+                                    <a>MEDITATION ON DEATH.........183</a>
+                                </li>
+                                
+                                <li class="table_content_group">
+                                    <a>Pattanumodana.........188</a>
+                                    <a>SHARING MERITS.........189</a>
+                                </li>
+                                
+                                <li><a>SHARING LOVING-KINDNESS (Only in English).........192</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="page_9" tabindex="0" class="h4 mb-4 ">PREFACE</p>
+                            <p>
+                                In preparing this Vandana book we used some material from the Vandana book compiled by Bhikkhu Bodhi and myself for use at the Washington Buddhist
+                                Vihara. Also, we acknowledge with thanks the use of The Pali Chanting with Translation, Vandana and Vat Pirith, Mirror of the Dhamma and Toward Peace.
+                            </p>
+                            <p>
+                                This book would not have been printed so soon with this quality if not for the kind help of Bhikkhu Rahula, Bhikkhu Dang Pham Jotika, Bhikkhu Sona, Samaneri Sama, Hal Barron, Dr. N. K. G. Mendis and Margo Born. I express my sincere thanks and gratitude to them, and Susila Mallawarachchi for designing the cover and the press for printing this book in time.
+                            </p>
+                            <p class="text-right">
+                                H G M Bhavana Society Rt. , Box - High Kiew, WV.  USA Tel () - December , 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="page_10" tabindex="0" class="h4 mb-4">PALI PRONUNCIATION</p>
+                            <p>
+                                As Pali writing does not have its own alphabet, people have adopted their own alphabet to write
+                                Pali and pronounce phonetically — pronouncing
+                                as it is written. The Pali alphabet is made of forty-one letters. These are divided into eight vowels, thirty-two consonants, and one pure nasal sound called Niggahita. The letters are classified into the categories represented in the following diagram:
+                            </p>
+                            
+                            <table class="mb-3 w-100">
+                                <tr>
+                                    <td> vowels:</td>
+                                    <td>a,ā,i,ī,u,ū,e,o</td>
+                                </tr>
+                                <tr>
+                                    <td>5 gutturals:</td>
+                                    <td>k,kh,g,gh,ï</td>
+                                </tr>
+                                <tr>
+                                    <td>5 palatals:</td>
+                                    <td>c,ch,j,jh,ñ</td>
+                                </tr>
+                                <tr>
+                                    <td>5 cerebrals:</td>
+                                    <td>t,th,d,dh,n</td>
+                                </tr>
+                                <tr>
+                                    <td>5 dentals:</td>
+                                    <td>ñ,ñh,ó,óh,õ</td>
+                                </tr>
+                                <tr>
+                                    <td>5 labials:</td>
+                                    <td>p,ph,b,bh,m</td>
+                                </tr>
+                                <tr>
+                                    <td>5 semi-vowels:</td>
+                                    <td>y,r,ë,l,v</td>
+                                </tr>
+                                <tr>
+                                    <td>1 sibilant:</td>
+                                    <td>s</td>
+                                </tr>
+                                <tr>
+                                    <td>1 spirant:</td>
+                                    <td>h</td>
+                                </tr>
+                                <tr>
+                                    <td>1 pure nasal:</td>
+                                    <td>m</td>
+                                </tr>
+                            </table>
+                            
+                            <p>
+                                Among the five classes of mutes, the gutturals are formed in the throat, the palatals with the tongue pressed against the front palate, the cerebrals with the tip of the tongue in contact with the back of the palate, the dentals with the tip of the tongue against the teeth, and the labials with the lips. Among the semi-vowels, l is cerebral and l is dental. Since a distinctive cerebral sound is not found in English, the pronunciation of the dental only is given below for those letters coming in both forms. The cerebral counterparts should be spoken with a similar sound, but uttered with the tongue placed against the
+                                palate rather than the teeth. Again among the mutes, k, g, c, j, t, d, ñ, ó, p, and b are unaspirates;
+                                kh, gh, ch, jh, th, dh, th, dh, ph, and bh are aspirates; and ï, ñ, õ, n, and m are nasals. The aspirates are single letters. They are pronounced
+                                like their unaspirated counterparts except that a slightly forceful outbreath is added to them. Hence the pronunciation of the unaspirates only is given here.
+                            </p>
+                            
+                            <p> The Vowels are pronounced as follows: </p>
+                            
+                            <div class="ml-4">
+                                <table class="mb-3 w-100">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-35">a</td>
+                                            <td>is like</td>
+                                            <td>u in hut</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">ā</td>
+                                            <td>is like</td>
+                                            <td>a in father</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">i</td>
+                                            <td>is like</td>
+                                            <td>i in pin</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">ī</td>
+                                            <td>is like</td>
+                                            <td>ee in beet</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">u</td>
+                                            <td>is like</td>
+                                            <td>u in pull</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">ū</td>
+                                            <td>is like</td>
+                                            <td>oo in pool</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">e</td>
+                                            <td>is like</td>
+                                            <td>a in bake</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">o</td>
+                                            <td>is like</td>
+                                            <td>o in hole</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <p> The Consonants: </p>
+                            
+                            <div class="ml-4">
+                                <table class="mb-3 w-100">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-35">k</td>
+                                            <td>is like</td>
+                                            <td>k in king</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">g</td>
+                                            <td>is like</td>
+                                            <td>g in gone</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">n</td>
+                                            <td>is like</td>
+                                            <td>ng in sing</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">c</td>
+                                            <td>is like</td>
+                                            <td>ch in church</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">j</td>
+                                            <td>is like</td>
+                                            <td>j in joy</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">ñ</td>
+                                            <td>is like</td>
+                                            <td>ny in canyon</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">t</td>
+                                            <td>is like</td>
+                                            <td>t in top</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">t</td>
+                                            <td>is like</td>
+                                            <td>t in thigh</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">d</td>
+                                            <td>is like</td>
+                                            <td>th in the</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">n</td>
+                                            <td>is like</td>
+                                            <td>n in name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">d</td>
+                                            <td>is like</td>
+                                            <td>d in dog</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">n</td>
+                                            <td>is like</td>
+                                            <td>n in not</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">p</td>
+                                            <td>is like</td>
+                                            <td>p in pot</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">b</td>
+                                            <td>is like</td>
+                                            <td>b in bat</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">m</td>
+                                            <td>is like</td>
+                                            <td>m in mother</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">y</td>
+                                            <td>is like</td>
+                                            <td>y in yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">r</td>
+                                            <td>is like</td>
+                                            <td>r in run</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">l</td>
+                                            <td>is like</td>
+                                            <td>l in long</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">v</td>
+                                            <td>is like</td>
+                                            <td>v in vine</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">s</td>
+                                            <td>is like</td>
+                                            <td>s in sun</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="w-35">h</td>
+                                            <td>is like</td>
+                                            <td>h in hot</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="intro" tabindex="0" class="h4 mb-4">INTRODUCTION</p>
+                            <p>
+                                The purpose of this book is manifold. One is to teach the users of this Vandana book how to pronounce Pali words correctly. The most effective way of doing so
+                                is to repeat the same thing over and over again. The
+                                Vandana book is made for daily recital at the Bhavana Center in West Virginia. By the daily repetition of these Pali verses and Suttas people can learn the Pali pronunciation without much effort.
+                            </p>
+                            <p>
+                                Secondly we intend to teach people the Pali language without much toil. Teaching Pali in the traditional method, such as using grammar books, translations, or exercises does not seem to work well with
+                                many people who have not been educated in the ancient methods of learning dead languages like Pali. Therefore we made one half of our chanting in English, so people learn the meaning of what they chant in Pali and later on they can compare the English with the Pali.
+                            </p>
+                            <p>
+                                Thirdly, we intend to teach people Dhamma through devotional service. As Pali language is used primarily to teach the Dhamma and as we spend more than an hour each day — morning and evening in chanting, we thought of making use of this opportunity to teach people the Dhamma without a great effort. In order to fulfill all these purposes we decided to include certain Suttas which are not normally used in
+                                Viharas for vandana service.
+                            </p>
+                            <p>
+                                The section that the monks and nuns at the Bhavana Center recite daily consists of Atita Paccavekkhana (recollection of the purpose of the requisites after using them) and Dasadhamma Sutta ( a sutta containing ten Dhammas for monks and nuns to reflect upon daily). The rest of the vandana book for everybody
+                                to recite daily consists of three of the most popular suttas: Mangala Sutta, Ratana Sutta and Karaniyametta Sutta. Other Suttas which are not used in traditional
+                                vandana books are: Anattalakkhana Sutta, Adittapariyaya Sutta, Khandha Paritta, Mettanisamsa Sutta and Attha-
+                                mahapurisavitakka.
+                            </p>
+                            <p>
+                                We added to the Paritta chanting section the summary of the Seven Factors of Enlightenment
+                                (Sattabojjhanga) in verses. Reminding oneself of
+                                the factors of enlightenment is so important that, according to the Mahacundatthera Bojjhanga, even the Buddha recovered from his illness by listening td that which he had expounded to his own followers.
+                            </p>
+                            <p>
+                                In order to increase the devotee’s confidence in
+                                the Triple Gem, we decided to add another most important and profound part of the Buddha’s teaching i.e. The formula of Dependent Origination (Paticcasamuppada). It is said that the six-color aura of the Buddha radiated from his head when he was reflecting on these factors of Dependent Origination in the fourth week of his enlightenment. This
+                                law of causation explains the whole nature of the interdependency of our existence here in this life and in the next as well.
+
+                            </p>
+                            <p>
+                                The Maha Jayamangala Gathas are a set of Pali verses of protection probably composed in Sri Lanka. Two of the sections most often chanted on any special occasion are the Karaniyametta Sutta and the Maha Jayamangala Gathas. Therefore we include them too in this vandana book for our monks, nuns and lay devotees to recite and memorize.
+                            </p>
+                            <p>
+                                Devotional service and Meditation are not very much different from each other. What we learn in devotional service culminates in the practice of meditation.
+                                For instance, we recite in the Anattalakkhana
+                                Sutta the three characteristics — impermanence, unsatisfactoriness and selflessness — of all conditional things. One realizes the three characteristics when one attains the goal of meditation. What we learn in
+                                Adittapariyaya Sutta is also what we learn from our own meditational experience. What we recite when making such offerings as flowers and incense to the Buddha is the recollection of impermanence which is one of the three characteristics of all conditional things. Moreover, one of the benefits of the meditation practice is to deepen our devotion to the Buddha, Dhamma and Sangha through our understanding of Dhamma. And it is this devotion that we express in words when we spend time in vandana practice.
+                            </p>
+                            <p>
+                                The Theravada Buddhist devotional service has
+                                been developed independently by different temples according to their own needs and feelings. Even today, each Buddhist Temple in the same country has its own vandana service. Therefore, there has not been one standard devotional service system accepted by every Theravada Buddhist temple in the world.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="howToSetUpAShrine" tabindex="0" class="h4 mb-4">HOW TO SET UP A SHRINE</p>
+                            <p>
+                                Those who wish to develop a vandana routine for themselves should set off a separate place in their resi- dence to be used exclusively for devotional practice and meditation. If space permits, a small extra room could be turned into a shrine room. If such a room
+                                is not available one might use a spacious closet or separate off a small section of a room by hanging a curtain. If space in one’s house is very small, then a reasonably large table could be set up or at least a corner table could be turned into an altar or a shelf high on a wall could be used to keep a Buddha image and treated as the focus of one’s vandana.
+                            </p>
+                            <p>
+                                Setting off a separate place for devotional service and meditation in one’s own home creates a very peaceful and serene psychological atmosphere. As our association with the place increases, it becomes possible merely by entering it to create a calming and soothing feeling in the mind. The repeated practice of this can serve us as a constant reminder of the ultimate value of our lives — that beyond all our immediate aims and activities our final
+                                goal is to attain enlightenment and liberation from suffering. When one treats one’s shrine area as a sanctuary where the Triple Gem — the Buddha,
+                                the Dhamma and the Sangha — reside, one can constantly be reminded of one’s reverence towards them. By reciting daily devotions and chanting suttas one leaves wholesome and positive vibrations in one’s shrine room. These vibrations also aid most positively one’s practice of meditation.
+                            </p>
+                            <p>
+                                The area set off for devotional practice and meditation should be a quiet, pleasant and private place. If the shrine is set up in a sleeping area it should stand in the direction of the head of the bed, not at its foot.
+                                As the head is the topmost part of the body, the head should be directed towards the shrine which has the objects of veneration. Entering the shrine, one should remove one’s shoes. In winter one does not have
+                                to remove one’s socks. This is a customary sign of respect. It promotes cleanliness in the shrine area. It also makes it easier to assume the correct postures for the devotional practice and the practice of meditation.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="objOfVeneration" tabindex="0" class="h4 mb-4">OBJECTS OF VENERATION ON THE ALTAR</p>
+                            <p>
+                                The central figure on the altar is the Buddha image in sitting posture. If one cannot find a suitable Buddha image, one may use a Buddha picture. One should remember that the Buddha image is not alive, but is the most outstanding representation of the embodiment of perfected physical attributes of the Buddha, intended to render visible the distinguished qualities of the Master — his serenity, composure, peacefulness, and purity. The attention directed towards these attributes of the Buddha during the devotional practice helps generate confidence and devotion towards the Buddha, makes the mind calm, and arouses inspiration to follow the path laid down by the Buddha.
+                            </p>
+                            <p>
+                                Training the mind to cultivate reverence and dedication towards the Buddha is an essential component of the practice of the Dhamma. Therefore, the Buddha image or the picture should be set up
+                                on a special table or stand reserved for it. The Buddha image should be placed a little higher than other articles of spiritual significance, such as images of great disciples, eminent teachers, Bodhi leaves,
+                                scriptural texts, Dhamma wheels, miniature stupas. And all of them must be placed a little higher than the
+                                head so that one is able to look up towards them at
+                                a gentle angle when kneeling down. The altar table should be covered with a clean cloth of colors and designs conducive to contemplative states of mind. A soft mat or rug can be laid out in front of the Buddha image, to be used for kneeling during devotional practice and meditation.
+                            </p>
+                            <p>
+                                No other image should be placed above the Buddha image. One should not sit with the feet pointing to the image, remain sitting or standing with the back to it, or engage in worldly conversation in the shrine room. Buddha images should not be used as items of living room decoration.
+                            </p>
+                            <p>
+                                Before the actual devotional practice begins one should place offerings on a small table placed in front of the main altar. If only one table is available for use, the Buddha image can be placed on a slightly elevated platform and the offerings, such as lights, incense,and flowers, can be set in front of the image. The lights may be either candles, oil lamps, or decorative electric lights. The flowers may be either artificial or natural but whenever possible fresh flowers should be offered. Other articles of offering may be water, fruits, sweets, and prepared food. However, food and fruits should be offered before noon. To hold lights, flowers, and incense, candle-holders, vases and an urn filled with sand should be used.
+                            </p>
+                            <p>
+                                One should understand that the Buddha image does not use any of these items of offering. We use them to express our veneration of the Buddha and our self-abnegation. In order to show our gratitude and appreciation to the supremely enlightened Buddha
+                                we offer food that nourishes our bodies, flowers and incense that please our eyes and nose. They are a symbolic way of offering all that we cherish in the material world to the supreme emblem of spiritual perfection, the Fully Enlightened One. After placing these offerings on the table the verses of offering should be recited following the reverential salutation to the Buddha, the Dhamma and the Sangha.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="theWayOfSalutation" tabindex="0" class="h4 mb-4">THE WAY OF SALUTATION</p>
+                            <p>
+                                The most appropriate devotional practice begins with a triple prostration before the Buddha image. The triple prostration ensures the understanding and conviction of one’s sincerity. It is a formal act of
+                                deep commitment to any honest and mindful deed. While prostrating one should collect one’s attention and bring it to bear upon the reaffirmation of one’s
+                                faith in the Buddha, the Dhamma and the Sangha.
+                            </p>
+                            <p>
+                                This act of prostration is called “five-point prostration” (pancanga vandana), because in this position both hands are placed together in front of the body with the thumbs and fingertips touching and slightly cupped at the palms. This is simply a form of respectful
+                                salutation used frequently as a greeting for monks or nuns and also for saluting parents and other elders. Holding hands in this position one should kneel down
+                                — the lower part of the legs under the thighs and
+                                the feet under the buttocks. Although there is no standard way of placing the hands down on the floor, we recommend that the palms be faced up or down and the hands separated, leaving enough room for the forehead to touch the ground. The forearms up to the elbows should be on the ground with the elbows touching the knees. Thus the body is resting on the ground at five points: the forehead, forearms, and lower legs. Following this the upper part of the body is raised and the hands rejoined in “anjali.” The full prostration should be done three times altogether.
+                            </p>
+                            <p>
+                                The three prostrations are done in order to express reverence to the Triple Gem and to inspire a posture of devotion, modesty, and openness. It also brings the additional benefit of curbing pride and arrogance. Those who are humble open themselves to the guidance of others and thus become capable of learning and growing. Reverence and humility are considered to be blessings in Buddhism because with these two qualities one can lower one’s head which
+                                is the topmost part of one’s body holding the brain and the main sense organs. By bowing down before the image of the supremely enlightened Buddha one prepares oneself to accept his teaching and guidance leading up to the attainment of enlightenment.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="formAndInformalVandana" tabindex="0" class="h4 mb-4">FORMAL AND INFORMAL VANDANA</p>
+                            <p>
+
+                                When you do vandana by yourself in your home or at a Vihara you may kneel down comfortably and start your vandana directly with the salutation to the Buddha, then proceed to the formulas for the refuges and precepts.
+                            </p>
+                            <p>
+                                When you do formal vandana with a monk or nun present, you make a formal request to a monk or nun to administer the refuges and precepts.
+                                This procedure preserves the religious relationship between the laity and clergy in the heritage of
+                                Theravada Buddhist practice.
+                            </p>
+                            <p>
+                                After you have made making the formal request
+                                the monk or nun begins the administration of the refuges with the following formula of salutation to the Buddha. “Namo tassa bhagavato arahato samma- sambuddhassa.” (I pay homage to the Blessed One, the Worthy One, the Fully Enlightened One.) The
+                                lay person repeats it three times after the monk or nun. The word for word meaning of the formula is
+                                this: “Namo” = “I pay homage”; “tassa” = “to him”; “Bhagavato” = “to the Exalted One”; “Arahato” = “to The Worthy One”; “Samma Sambuddhassa” = “to The Fully Enlightened One.”
+                            </p>
+                            <p>
+                                After the salutation repeat another formula three times to take Refuge in the Buddha, the Dhamma and the Sangha. These three are called the Three Refuges in the Buddhist religious tradition. They also are called the Triple Gem. By taking refuge in the Triple Gem one is initiated into the practice of the Buddha’s teaching. From that point on one can be considered
+                                to be a Buddhist. However, the real Buddhist is the one who lives a life following all the principles of the Buddha’s teaching with full understanding.
+                            </p>
+                            <p>
+                                Therefore the recitation of the formula of taking the Refuge should be done with full understanding of the meaning of the Three Refuges. The first of the three Refuges is the Buddha who is the discoverer and expounder of the path to liberation. He is the supremely enlightened being who elevated human dignity to the highest spiritual attainment, purifying the mind through the practice of the path laid down by all enlightened beings including himself. The Dhamma is the Buddha’s teaching of the truth. The Sangha is the community of enlightened disciples of the Buddha. They are four pairs and eight individuals.
+                                The four pairs are those who have attained the Stream-entry Path and Fruit, those who have attained the Once-Returners’ Path and Fruit, those who have attained the Never Returners’ Path and Fruit and those who have attained the Arahants’ Path and Fruits. When these pairs are separated there are Eight Individuals. The definition and qualification of the Buddha, the Dhamma and the Sangha are given in the Vandana section of this book.
+                            </p>
+                            <p>
+                                Taking refuge is purely a mental process of accepting the Triple Gem as one’s own supreme guiding principles. In order to achieve the goal of these principles one has to follow their meanings. This means translating the Buddha’s teachings into action and living by the Dhamma (Dhammam kayena passati).
+                            </p>
+                            <p>
+                                The way of following the Triple Gem is, in fact, outlined in the next section following the Triple
+                                Gem, i.e. the precepts which are divided into
+                                several categories. In this Vandana book we have included only the five precepts and the eight precepts which lay devotees are expected to observe. These are training rules that each person takes upon oneself voluntarily to uphold without any sense
+                                of intimidation or supplication to anybody outside oneself. Although putting them into action is a real challenge to one’s integrity, the serious devotee makes every humanly possible effort to maintain them. If one is fully committed to the Triple Gem one may not find it impossible to put these principles into one’s daily practice.
+                            </p>
+                            <p>
+                                By observing these precepts you practice loving- kindness in action. When you abstain from killing you respect all living beings. When you abstain from not taking what is not given, you practice appreciative joy — you rejoice in others’ happiness of having what they have. By abstaining from sexual misconduct you respect and honor the dignity of other persons. By abstaining from telling lies, you not only honor and respect truthfulness but you also maintain your own dignity and self-respect. By abstaining from taking intoxicating drinks and drugs you remain sober with a steady state of mind which can easily be trained to cultivate mindfulness leading up to the attainment of enlightenment.
+                            </p>
+                            <p>
+                                If you take the three Refuges and the Five Precepts or Eight Precepts from a monk/nun the monk or nun will admonish you to practice them diligently.
+                                Then he/she will summarize in a verse the benefits of putting these principles into practice.
+                            </p>
+                            <p>
+                                This is followed by the recitation of the twenty-four attributes of the Buddha, the Dhamma and the Sangha each having nine, six and nine attributes respectively. These formulas go back to the time of the Buddha himself. He used them on many occasion to describe the Triple Gem. Reciting these formulas with full understanding of their meaning and with a calm and composed state of mind instills such a deep sense of devotion in the mind of the devotee that they have been included among the subjects of meditation as recollections (anussati). In the verses preceded by the Dhamma vandana you will read
+                                “Dhamman ca tividham varam” (excellent threefold Dhamma). The Threefold Dhamma is the Dhamma of scriptural study (paryatti dhamma), the Dhamma of practice (patipatti dhamma) and the Dhamma of realization (pativedha dhamma). Also, you will read
+                                “Sanghan ca tividhuttamam” (Noble Threefold Sangha). The threefold Sangha is the community of arahants,
+                                the community of learners, and the order of fully ordained monks and nuns.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="shareOrDedication" tabindex="0" class="h4 mb-4">SHARING OR DEDICATION OF MERITS</p>
+                            <p>
+                                “Merits” means skills. When you have skills you can share them with others. In the ordinary sense of the
+                                word, “merits” means that which you can sell to or buy from others. You are promoted in your job or academic level according to your merits. Similarly, in the spiritual field, the things that you do to promote
+                                your peace and happiness are called meritorious acts. It is these acts that elevate your spiritual level and lead to the attainment of enlightenment. These spiritual merits are committed with a pure state
+                                of mind which follows you as your own shadow which never leaves you. When you do vandana you do it with a pure state of mind. You admire and appreciate the qualities of the Triple Gem and wish to emulate and adopt them in your own life. When you make such conscious effort to espouse them your mind creates room for them and you endeavour to live a life similar to those noble ones who are the
+                                embodiments of peace and happiness.
+                            </p>
+                            <p>
+                                Having cultivated these noble qualities you wish to share them with your dear ones, known ones and even unknown ones. Sharing what you highly appreciate and admire with others is a very generous and compassionate act. Therefore in Buddhist tradition sharing merits with others is also a meritorious deed
+                                which is called the dedication of merit (anumodana). Rejoicing in other’s merits also is considered to be meritorious. This means you support and promote the wholesome thoughts, words and deeds of yourself as well as those of others. As you do this with
+                                pure intention, this kind of wholesome deed is called wholesome kamma. What you really do in your vandana is make an effort to cultivate the thought of practicing the Noble Eightfold Path. By accepting the Triple Gem as your only guides and determining to practice the precepts you lay the foundation of morality. By contemplating the qualities of the Triple Gem, reflecting on the nature of all conditioned things and reciting the verse on Right Concentration, you develop the spiritual atmosphere to take steps in the practice of meditation. All these are meritorious thoughts.
+                            </p>
+                            <p>
+                                In memory of deceased relatives people perform numerous merit-sharing ceremonies in order to purify their own minds. They may give something to religious places or to the poor, observe the precepts
+                                or teach the Dhamma. Some people may even become ordained for a short period of time and stay in monasteries. Having done one or more of these things relatives or friends perform a ceremony in seven days, three months, or one year in memory of the deceased.
+                            </p>
+                            <p>
+                                Before the ceremony starts the lay people fill a pot with clean water and keep it before them during the chanting. They also have two bowls, a smaller
+                                bowl inside a larger one. Towards the end of the ceremony relatives or friends of the deceased pour water from a pitcher or tea-pot into an empty bowl placed in a larger bowl saying “May my/our departed relatives share these merits.” (idam no natinam hotu sukhita hontu natayo.) They let the water overflow
+                                into the smaller bowl. Symbolically overflowing water signifies the generosity of living relatives or friends.
+                                Water represents life, for there is life where water is. The water in this ceremony also represents the merits without which none can be peaceful and happy just as without water none is able to survive. Just as water gives beings life, meritorious deeds give beings vitality to live. The empty cup represents the deceased relative or friend who is empty of happiness. Just as the cup fills up with water, so the minds of the deceased will be filled with joy and happiness after sharing the merits. Of course, not all the deceased will be in a position to share our merits. Only those who are born in an unfortunate state of existence called “spirits who subsist on the offerings of others” (Paradattupajivi peta) can share our merits. During the merit-sharing ceremony verses are recited by monks or nuns at the end of the pouring of the water into
+                                the empty cup.
+                            </p>
+                            <p>
+                                This merit-sharing ceremony, according to the Tirokuddha Sutta, was introduced by the Buddha
+                                himself in order to help King Bimbisara of Magadha in sharing merits with his deceased relatives who had been reborn among the spirits who subsist on the offerings of others.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="forgiveness" tabindex="0" class="h4 mb-4">FORGIVENESS</p>
+                            <p>
+                                At the end of vandana we ask the Buddha, the Dhamma and the Sangha to forgive us if we have done some wrong to them. Although the Buddha is not physically present in front of us, we have the image of the Buddha to represent and remind us
+                                of Him. The effect of paying respect to the name
+                                of the Buddha is not diminished in our minds whether the Buddha is present in front of us or not. Mere confidence in Him is what is necessary and sufficient for us to pay homage. The Dhamma taught by Him represents the Buddha. One who sees the Dhamma with wisdom sees the Buddha’s wisdom, compassion and enlightenment in it. When we pay homage to the Buddha we feel that we are in front
+                                of the living Buddha. This feeling arouses our deep devotion and dedication to Him. Therefore when we request the Buddha to pardon us for the faults we have committed unmindfully, we humble ourselves and determine not to commit them again. Admitting one’s faults becomes a sincere and honest confession.
+                            </p>
+                            
+                            <p id="forgiveness" tabindex="0" class="h4 mb-4">UPOSATHA</p>
+                            <p>
+                                We added the Uposatha section for lay people who live at the Bhavana Center to repeat every morning and practice while they live in this Center. The people who intend to become ordained at this Center are also expected to observe the Eight Precepts daily. People not living in the Meditation Center may use this section to intensify their effort in Dhamma practice on Uposatha Day which is determined by the lunar calendar, falling on the full-moon day, the new-moon day, and the two quarter-moon days of each lunar month. The full-moon day is considered to be the most important of all of them. On the Uposatha day the Bhikkhus and Bhikkhunis living in a community of four or more, gather to recite the rules of the monastic order (Patimokkha). In Buddhist countries lay Buddhists generally go to the Viharas to pass
+                                the day and night, often observing the three refuges and eight precepts which you find in this vandana book. They spend their time reading Dhamma
+                                books, listening to Dhamma sermons, meditating and discussing the Dhamma. Sometimes a lay Upasaka (man observing the precepts) or Upasika (woman observing the precepts) who is well versed in the Dhamma will preach Dhamma to the rest of the people if a monk or nun is not available.
+                            </p>
+                            <p>
+                                On close scrutiny you will notice that all the precepts are meant to discipline your mind and focus your attention on the practice of the Dhamma. They are
+                                not formulated for parroting, but for putting into action. When the precepts are put into action they bring a very good discipline necessary for the practice of meditation, calming the mind, deepening the understanding of Dhamma and liberating our minds from numerous psychic irritants. The lay follower. undertaking this code of discipline follows a monastic life similar to that of a novice monk or nun who observes these eight precepts and two additional ones.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="forProtection" tabindex="0" class="h4 mb-4">FOUR PROTECTIONS</p>
+                            <p>
+                                Regarding The Four Protective Meditations: recollecting the Buddha’s attributes at the time
+                                you pay homage to him is absolutely necessary in order to reinforce your confidence in him. The Metta Sutta, the Mittanisamsa Sutta, the Khandha Paritta, and “Sharing Loving-Kindness” are verses which we selected so that you may cultivate benevolent thoughts during the vandana practice.
+                            </p>
+                            <p>
+
+                                You can choose one to recite each time you have vandana, or if you have time, you may recite them all. The third protection is “Unattractiveness of the Body.” This section has been introduced to vandana by
+                                ancient Buddhists in order to reduce our attachment to the body by reminding us again and again of the true nature of the body. This knowledge reduces our pride and thought of permanence of the body. The last section of this protection is the recollection of death. As most people do not want to know anything about death, there is no opportunity for them to know the true nature of life. This recollection brings us face to face with the reality of life. It helps weaken the attachment to life, treasure, and wealth; it produces
+                                a sense of renunciation and compassion; and, when the time for our own parting arrives, it enables us
+                                to die in calm and self-possession. It also is used
+                                in some countries for recitation during the funeral ceremony held for a deceased relative or friend and for commemorating a death anniversary.
+
+                            </p>
+                            <p>
+                                For the convenience of the users of this book we divided the vandana book into two sections. We suggest that all devotees recite the first section daily and add one or two parts from the second section.
+                                It is advisable to classify, according to the user’s convenience, the entire second section into seven parts and use one of them each day in addition to the first section, so in a week the entire book can be used.
+                                Then repeat this procedure each week.
+                            </p>
+                            <p class="text-right">
+                                H G Rt.  Box - High View, WV  USA Tel: ()-
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p class="h3 my-5">Vandana / Devotion</p>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="tisaranaSilaYacana" tabindex="0" class="h4 mb-4">TISARANA-SILA YACANA</p>
+                            <p>
+                                Laity: Sādhu! Sādhu! Sādhu!
+                                Okāsa aham bhante/ayye tisaranena saddhiü pañcasīlam dhammaü yācāmi, anuggahaü katvā sīlaü detha me bhante/ayye.
+                                Dutiyampi... okāsa... me...
+                                Tatiyampi... okāsa... me...
+                                Monk/Nun: Yaü ahaü vadāmi taü vadetha. Laity: Āma, bhante / ayye.
+                            </p>
+                            <p class="h5 mb-4">TIRATAOA</p>
+                            <pre>
+                                (Monk/nun, followed by laity)
+                                Namo tassa bhagavato arahato sammā sambuddhassa
+                                Namo tassa bhagavato arahato sammā sambuddhassa
+                                Namo tassa bhagavato arahato sammā sambuddhassa
+                            </pre>
+                            <pre>
+                                Buddhaü saranaü gacchāmi
+                                Dhammaü saranaü gacchāmi
+                                Sanghaü saranaü gacchāmi
+                                *Bhante = Monk; Ayye = Nun. Use what is appropriate
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="reqForTheRefuges" tabindex="0" class="h4 mb-4">REQUEST FOR THE REFUGES AND PRECEPTS</p>
+                            <p>
+                                Laity: Sādhu! Sādhu! Sādhu!
+                                Permit me bhante/ayye, I ask for the five precepts/eight* precepts together with the three refuges. Please, bhante/ayye, kindly administer the precepts to me.
+                                A second time permit me,... A third time permit me,...
+                                Monk/nun: Repeat after me. Laity: Yes, Bhante/ayye
+                            </p>
+                            
+                            <p class="h5 mb-4">THREE REFUGES</p>
+                            <p>
+                                (Monk/nun, followed by laity)
+                                I pay homage to the Blessed One, the Worthy One, the Fully Enlightened One.
+                                (three times)
+                            </p>
+                            <pre>
+                                I go to the Buddha for refuge.
+                                I go to the Dhamma for refuge.
+                                I go to the Sangha for refuge.
+                                *Please repeat what is applicable
+                            </pre>
+                            <pre>
+                                Dutiyampi Buddhaü saranaü gacchāmi
+                                Dutiyampi Dhammaü saranaü gacchāmi
+                                Dutiyampi Sanghaü saranaü gacchāmi
+                            </pre>
+                            <pre>
+                                Tatiyampi Buddham saranaü gacchāmi
+                                Tatiyampi Dhammaü saranaü gacchāmi
+                                Tatiyampi Sanghaü saranaü gacchāmi
+                            </pre>
+                            <pre>
+                                Monk/nun: Saranāgamanaü sampunnaü.
+                                Laity: Āma, bhante / ayye.
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="pancasila" tabindex="0" class="h4 mb-4">PANCASILA</p>
+                            <pre>
+                                (Monk/nun, followed by laity)
+                                *Pānātipātā veramaõī sikkhāpadaü samādiyāmi.
+                                *Adinnādānā veramaõī sikkhāpadaü samādiyāmi.
+                                *Kamesu micchācarā veramaõī sikkhāpadaü
+                                samādiyāmi.
+                                *Musāvādā veramaõī sikkhāpadaü samādiyāmi.
+                                *Surā-meraya-majja pamadaññhānā veramaõī
+                                sikkhāpadaü samādiyāmi.
+                            </pre>
+                            <pre>
+                                A second time I go to the Buddha for refuge.
+                                A second time I go to the Dhamma for refuge.
+                                A second time I go to the Sangha for refuge.
+                            </pre>
+                            <pre>
+                                A third time I go to the Buddha for refuge.
+                                A third time I go to the Dhamma for refuge.
+                                A third time I go to the Sangha for refuge.
+                            </pre>
+                            <pre>
+                                Monk/nun: The Three Refuges are complete.
+                                Laity: Yes, Bhante/ayye.
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Card End -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="theFivePrecepts" tabindex="0" class="h4 mb-4">FIVE PRECEPTS</p>
+                            <pre>
+                                (Monk/nun, followed by laity)
+                                I undertake the training rule to abstain from taking life.
+                                I undertake the training rule to abstain from stealing.
+                                I undertake the training rule to abstain from sexual misconduct.
+                                I undertake the training rule to abstain from false speech.
+                                I undertake the training rule to abstain from intoxicating drinks and drugs causing heedlessness.
+                            </pre>
+                            <p>
+                                Monk/nun: Tisaranena saha pancasīlam dhammaü sādhukaü surakkhitaü katvā appamādena sampādetha.
+                            </p>
+                            <p>
+                                Laity: Āma, bhante / ayye.
+                            </p>
+                            <pre>
+                                Monk/nun:
+                                Sīlena sugatiü yanti
+                                Sīlena bhogasampadā
+                                Sīlena nibbutiü yanti
+                                Tasmā sīlaü visodhaye.
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Card END -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="atthangasila" tabindex="0" class="h4 mb-4">ATTHANGASILA</p>
+                            <pre>
+                                Laity:
+                                Aham bhante/ayye ajja imañ ca divasam uposathaü
+                                upavasāmi, aññhangasamannāgataü sīlaü samādiyāmi.
+                            </pre>
+                            <p>Monk/Nun, followed by Laity:</p>
+                            <pre>
+                                *Pānātipātā veramanī sikkhāpadaü samādiyāmi.
+                                *Adinnādānā veramanī sikkhāpadaü samādiyāmi.
+                                *Abrahacariyā veramanī sikkhāpadaü samādiyāmi.
+                                *Musāvāda veramanī sikkhāpadaü samādiyāmi.
+                                *Surā-meraya-majja pamādaññhānā veramanī sikkhāpadaü samādiyāmi.
+                            </pre>
+                            <p>Monk/nun:</p>
+                            <p>Maintaining well the five precepts together with the three refuges, strive on with diligence.</p>
+                            <pre>
+                                Laity: Yes, bhante/ayye
+                                Monk/nun:
+                                By morality they attain good rebirth,
+                                by morality they achieve wealth,
+                                by morality they attain nibbana therefore one should purify morality.
+                            </pre>
+                        </div>
+                    </div>
+                    <!-- Card END -->
+                    
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <p id="atthangasila" tabindex="0" class="h4 mb-4"> </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+            function focusPoint(id){
+                document.getElementById(id).focus();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="img-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+        <!-- Bootstrap CSS -->
+        <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom_style.css">
+        <title>Bhavana Vandana</title>
+    </head>
+    <body>
+        <div class="container-fluid mt-2 mt-md-2 mt-lg-2">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+                    <div class="left_icon text-white list-inline-item">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <img src="img/image1.png" class="logo">
+                    </div>
+                    <div class="app_title list-inline-item align-middle">
+                        <p> Bhavana Vandana </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+                    <div class="menu_list_button">
+                        <a href="index.html">PL</a>
+                        <a class="button_active" href="tableOfContent.html">TOC</a>
+                        <a href="twoPageView.html">2</a>
+                        <a href="singlePageView.html">1</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tableOfContent_html"></div>
+            
+        </div>
+    
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener("deviceready", onDeviceready, false);
+            
+            function onDeviceready(){
+                
+                var tableOfContent = window.localStorage.getItem("tableOfContent");
+                //alert("singlePage_data=>"+singlePage_data)
+                if(tableOfContent == null){
+                    //Insert and get local database value
+                    insert_tableOfContent();
+                }else if(tableOfContent != null && tableOfContent > 0){
+                    //Directly get local database value
+                    get_tableOfContent();
+                }
+            }
+        
+            function focusPoint(id){
+                document.getElementById(id).focus();
+            }
+
+            function showContentView(page){
+
+                location.replace("twoPageView.html?page="+ page);
+
+            }
+
+        </script>
+    </body>
+</html>

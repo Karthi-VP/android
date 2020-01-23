@@ -1,0 +1,136 @@
+body{
+    background-color: #cc0000;
+    color: #fff;
+}
+.logo{
+    height: 42px;
+    margin-left: 9px;
+    vertical-align: middle;
+}
+.left_icon i{
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+.app_title p{
+    color: #ffbf00;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 2px 0px;
+}
+.menu_list_button a{
+    border: 1px solid #5a5a5a;
+    background-color: #e8944c;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 18px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    line-height: 1.9;
+}
+.app_sup_title{
+    color: #ffbf00;
+}
+
+.table-striped>thead{
+    background-color: #5074e2;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #a6b9f2;
+}
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+  background-color: #bccaf5;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.form_edit_icon a{
+    color: #dfad01 !important;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}
+.form_edit_icon a i{
+    padding: 8px;
+}
+
+.button_active{
+    box-shadow: 1px 5px 5px #fff;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+.custom_search .form-control{
+    height: 28px;
+    font-size: 13px;
+}
+.custom_search .input-group-append{
+    height: 28px;
+}
+.custom_search .input-group-append .btn{
+    padding: 0px 12px;
+}
+.table_ofContent{
+    color: #000;
+}
+.table_ofContent ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+.table_ofContent ul li{
+    line-height: 2.2;
+}
+.table_ofContent ul li a{
+    display: block;
+}
+.table_ofContent ul li .sub_ulList{
+    margin-left: 15px;
+}
+.table_ofContent .table_index .table_content_group{
+    margin: 10px 0;
+}
+[tabindex] {
+   outline: none !important;
+}
+.w-35{
+    width: 35% !important;
+}
+audio{
+    height: 26px;
+    max-width: 95%;
+}
+.mt-8{
+    margin-top: 8rem;
+}
+.book_shadow{
+    box-shadow: 0px 10px 8px;
+    padding-right: 10px;
+}
+.border-top-dashed{
+    border-top: 1px dashed;
+}
+
+.slider {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+  margin-right: 18px;
+}
